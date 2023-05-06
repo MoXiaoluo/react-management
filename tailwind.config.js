@@ -6,6 +6,9 @@ export default {
       lineHeight: {
         12: '3rem',
       },
+      width: {
+        100: '25rem',
+      },
     },
   },
   plugins: [],
