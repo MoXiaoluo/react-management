@@ -1,3 +1,3 @@
-@tailwind base;
+/* @tailwind base; conflict with antd, using reset.css init browser style  */
 @tailwind components;
 @tailwind utilities;

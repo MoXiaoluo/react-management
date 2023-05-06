@@ -1,9 +1,15 @@
-import { useState } from 'react';
+import { Suspense } from 'react';
+
+import { useRoutes } from 'react-router-dom';
+import router from './router';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <>顶层组件</>;
+  const route = useRoutes(router);
+  return (
+    <>
+      <Suspense fallback='loading'>{route}</Suspense>
+    </>
+  );
 }
 
 export default App;
